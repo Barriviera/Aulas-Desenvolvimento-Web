@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Realidade Virtual - Assessoria</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Realidade Virtual</h1>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="plataformas.html">Plataformas</a></li>
+            <li><a href="jogos.html">Jogos</a></li>
+            <li><a href="programas.html">Programas</a></li>
+            <li><a href="requisitos.html">Requisitos Mínimos</a></li>
+            <li><a href="assessoria.html">Assessoria</a></li>
+        </ul>
+    </nav>
+    </header>
+    <div class="container">
+      <p>Preencha o formulário abaixo para solicitar assessoria para montagem e configurações de setups de realidade virtual.</p>
+      <form action="submit.php" method="POST">
+        <div class="form-group">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <footer>
+      <p>© 2023 Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Cálculo de x e y</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+</head>
+<body>
+  <h1>Cálculo de x e y</h1>
+  <h1>Cálculo de x = log10(a+b) e y = log10(a+c)</h1>
+  <section class="principal">
+    <div class="informacao">
+      <div class="medida">
+        <label for="a">Valor A:</label>
+        <input type="number" id="a">
+      </div>
+  <div class="medida">
+    <label for="b">Valor B:</label>
+    <input type="number" id="b">
+  </div>
+
+  <div class="medida">
+    <label for="c">Valor C:</label>
+    <input type="number" id="c">
+  </div>
+
+  <button onclick="calcular()">Calcular</button>
+</div>
+<div class="resultado">
+  <h2>Resultados:</h2>
+  <p id="x"></p>
+  <p id="y"></p>
+</div>
+</section>
+  <script src="script.js"></script>
+  <script>
+    function calcular() {
+      // Obtendo os valores dos inputs
+      var a = parseFloat(document.getElementById('a').value);
+      var b = parseFloat(document.getElementById('b').value);
+      var c = parseFloat(document.getElementById('c').value);
+
+      // Calculando x e y
+      var x = Math.log10(a + b);
+      var y = Math.log10(c + a);
+
+      // Exibindo os resultados
+      document.getElementById('x').innerText = 'x: ' + x.toFixed(2);
+      document.getElementById('y').innerText = 'y: ' + y.toFixed(2);
+    }
+  </script>
+
+  <h3>Mateus de Castro Duarte Cardoso - PC3008851</h3>
+  <h3>Pedro Barriviera - PC3010155</h3>
+</body>
+</html>

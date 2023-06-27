@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exemplo de formulário</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Formulário de cadastro</h1>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="endereco">Endereço:</label>
+      <input type="text" id="endereco" name="endereco" required>
+
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade" required>
+
+      <label for="estado">Estado:</label>
+      <input type="text" id="estado" name="estado" required>
+
+      <label>Sexo:</label>
+      <label for="masculino">
+        <input type="radio" id="masculino" name="sexo" value="masculino" required>
+        Masculino
+      </label>
+      <label for="feminino">
+        <input type="radio" id="feminino" name="sexo" value="feminino" required>
+        Feminino
+      </label>
+
+      <label>Estado civil:</label>
+      <label for="solteiro">
+        <input type="radio" id="solteiro" name="estado-civil" value="solteiro" required>
+        Solteiro(a)
+      </label>
+      <label for="casado">
+        <input type="radio" id="casado" name="estado-civil" value="casado" required>
+        Casado(a)
+      </label>
+      <label for="divorciado">
+        <input type="radio" id="divorciado" name="estado-civil" value="divorciado" required>
+        Divorciado(a)
+      </label>
+      <label for="viuvo">
+        <input type="radio" id="viuvo" name="estado-civil" value="viuvo" required>
+        Viúvo(a)
+      </label>
+
+      <label>Escolhas:</label>
+      <label for="gosta-videogame">
+        <input type="checkbox" id="gosta-videogame" name="escolhas[]" value="gosta-videogame">
+        Você gosta de videogame?
+      </label>
+      <label for="posta-redesocial">
+        <input type="checkbox" id="posta-redesocial" name="escolhas[]" value="posta-redesocial">
+        Você posta vídeo na rede social?
+      </label>
+      <label for="compra-internet">
+        <input type="checkbox" id="compra-internet" name="escolhas[]" value="compra-internet">
+        Você compra pela internet?
+      </label>
+      <label for="usa-banco">
+        <input type="checkbox" id="usa-banco" name="escolhas[]" value="usa-banco">
+        Você usa banco pela internet?
+      </label>
+
+      <label for="observacoes">Observações:</label>
+      <textarea id="observacoes" name="observacoes"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
