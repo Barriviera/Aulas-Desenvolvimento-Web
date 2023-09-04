@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.container {
+  margin: 20px;
+  font-size: 0;
+}
+
+.column {
+  display: inline-block;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  margin: 0 10px 20px; /* Adicionei margens horizontais e uma inferior */
+  width: 30%; /* Largura das colunas em porcentagem */
+  font-size: 16px;
+}
+
+@media screen and (max-width: 599px) {
+  .column {
+    width: 100%;
+    margin: 0 0 20px; /* Adicionei apenas margem inferior */
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .column {
+    width: 47%; /* Largura das colunas em porcentagem */
+    margin: 0 1.5% 20px; /* Margens horizontais e inferior */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .column {
+    width: 31%; /* Largura das colunas em porcentagem */
+    margin: 0 1% 0; /* Margens horizontais e inferior */
+  }
+}
