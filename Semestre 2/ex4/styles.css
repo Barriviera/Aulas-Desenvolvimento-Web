@@ -29,7 +29,6 @@ body {
 
 .header {
   background-color: #cccccc;
-  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -167,7 +166,7 @@ body {
 }
 
 .left-container img {
-  width: 320px;
+  width: 100%;
 }
 
 .left-container h1 {
@@ -209,9 +208,9 @@ body {
   margin-top: 10px;
 }
 
-.menu-container {
-  display: flex;
-  justify-content: flex-end;
+.division{
+  margin-top: -55px;
+   display: flex;
 }
 
 .employees-column {
@@ -233,11 +232,6 @@ body {
 }
 
 
-.employees-container {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .employee {
   display: flex;
   align-items: center;
@@ -256,29 +250,36 @@ body {
   height: 100px;
   border: 1px solid #ccc;
   padding: 10px;
-  margin-top: 10px;
+  
 }
 
 .message-container button {
   background-color: #cccccc;
   border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
   color: #000;
   cursor: pointer;
   margin-top: 10px;
 }
 
 
+
 .left-container,
 .data-container,
 .menu-container,
-.employees-container,
-.message-container {
+.employees-container {
   background-color: #ffffff;
   /* Cor dos containers como cards */
   padding: 20px;
   /* Espaçamento interno */
+  margin: 15px;
+  /* Espaçamento externo */
+}
+
+.message-container {
+  padding-top: 25px;
   margin: 15px;
   /* Espaçamento externo */
 }
