@@ -167,7 +167,7 @@ body {
 }
 
 .left-container img {
-  width: 320px;
+  width: 100%;
 }
 
 .left-container h1 {
@@ -209,13 +209,10 @@ body {
   margin-top: 10px;
 }
 
-.menu-container {
+
+.cardapio{
   display: flex;
   justify-content: flex-end;
-}
-
-.employees-column {
-  margin-top: 50px;
 }
 
 .employees-column p {
@@ -223,7 +220,6 @@ body {
 }
 
 .menu-column {
-  margin-top: 50px;
   width: 50%;
   float: left;
 }
@@ -232,11 +228,6 @@ body {
   margin-top: 5px;
 }
 
-
-.employees-container {
-  display: flex;
-  justify-content: flex-end;
-}
 
 .employee {
   display: flex;
